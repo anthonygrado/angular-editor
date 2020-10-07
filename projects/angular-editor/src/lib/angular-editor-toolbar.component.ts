@@ -8,8 +8,7 @@ import {SelectOption} from './ae-select/ae-select.component';
 @Component({
   selector: 'angular-editor-toolbar',
   templateUrl: './angular-editor-toolbar.component.html',
-  styleUrls: ['./angular-editor-toolbar.component.scss'],
-  providers: [AngularEditorService]
+  styleUrls: ['./angular-editor-toolbar.component.scss']
 })
 
 export class AngularEditorToolbarComponent {
@@ -18,8 +17,8 @@ export class AngularEditorToolbarComponent {
   block = 'default';
   fontName = 'Times New Roman';
   fontSize = '3';
-  foreColour;
-  backColor;
+  foreColour: any;
+  backColor: any;
 
   headings: SelectOption[] = [
     {
